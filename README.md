@@ -62,7 +62,7 @@ The BOSCH Sensortec versions are all different so BSEC and AI-Studio version num
 
 6. Copy to microSD card
 
-Mount the microSD card you are using with the BME Devkit on your computer (mine has an SD-CARD slot) and use a file manager to copy the board file into the root of the SD-CARD (FAT format and no bigger than 32GB).  The file name will be similar to this: 2023_05_03_12_54_BoardConfiguration.bmeconfig. My computer has an adapter for the microSD.
+Mount the microSD card you are using with the BME Devkit on your computer (mine has an SD-CARD slot) and use a file manager to copy the board file into the root of the SD-CARD (FAT format and no bigger than 32GB).  The file name will be similar to this: 2023_05_03_12_54_BoardConfiguration.bmeconfig. You may need an adapter for the microSD.
 
 7. Eject the SD-CARD and put it back in the BME688-Devkit
 
