@@ -69,10 +69,10 @@ Mount the microSD card you are using with the BME Devkit on your computer (mine 
 ![sd-card1.png](img/sd-card1.png "SD-CARD")
 
 # STEP 2 - BME688-Devkit setup
+
 8. Communicating with the BME6888-Devkit
 
-The devkit connects to your computer via a USB cable, and it requires serial communications to be enabled and that requires a driver to be loaded.
-Windows 10 recognises the devkit on plugging the USB cable in, but by default does not have the driver, so looking in device manager you will see similar to this.
+The devkit connects to your computer via a USB cable, and it requires serial communications to be enabled and that requires a driver to be loaded. Windows 10 recognises the devkit on plugging the USB cable in, but by default does not have the driver, so looking in device manager you will see similar to this.
 
 ![device-mgr1.png](img/device-mgr1.png)
 
