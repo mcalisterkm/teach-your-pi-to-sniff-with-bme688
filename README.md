@@ -24,7 +24,7 @@ The BOSCH Sensortec AI-Studio runs on Windows and MAC, and the models it produce
 
 NOTE: It is important not to touch the BME688 sensor as it may contaminate the sensor and introduce measurement errors. The two push buttons in the middle are used to mark changes in data, and it is easy to miss.
   
-The BOSCH-Sensortec software all has release notes describing what versions are compatible, and the software set used here is:
+The BOSCH-Sensortec software have release notes describing what versions are compatible, and the software set used here is:
 
 | Name                                   | File & Ver                                |
 |:----------------------------------------|:------------------------------------------|
