@@ -95,7 +95,7 @@ It will ask for the COM port and install the BOSCH Sensortec firmware on the Huz
 
 ![flash1.png](img/flash1.png)
 
-The Huzza32 has two LED either side of the microUSB connection, one red and one yellow. The yellow is external lithium battery charge information, and as I have no external battery it flashes constantly. The red flashes intermittently prior to flashing the firmware, and after flashing it emits a steady 1 sec flash when recording. Recording starts as soon as the development kit is powered on.  The coin battery supports the RTC (real time clock) only.
+The Huzza32 has two LEDs either side of the microUSB connection, one red and one yellow. The yellow is external lithium battery charge information, and as I have no external battery it flashes constantly. The red flashes intermittently prior to flashing the firmware, and after flashing it emits a steady 1 sec flash when recording. Recording starts as soon as the development kit is powered on.  The coin battery supports the RTC (real time clock) only.
 
 ![reading-data1.png](img%2Freading-data1.png)
 
