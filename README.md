@@ -1,7 +1,14 @@
 # Teach your Raspberry Pi to Sniff with a BME688 module
 
 In this article we cover the recording of data, training the AI Model, and deploying the model to a Raspberry Pi Zero 2.
-There are three 
+There are dependencies:
+1) For data collection I use the Bosch Sensortec 8 sensor devkit and some ethenol/hand sanitiser
+2) To analyse the data and generate the AI Model I use BME AI Studio
+3) To deploy the AI Model and "Sniff" I use a Raspberry PI and a BME688 Module (PI3g, Adafruit, Pimoroni, and others have I2C based boards with a single BME688 sensor).
+
+If you only have the PI and a BME688 module then you can skip the data collection part (no 8 sensor devkit) and start at Step 3 with the import of the project data into AI Studio. My data is air and ethenol so you will need a little ethenol - I used hand sanitiser which is ~70% ethenol, but it might work with a spray of perfume as that is also has an ethenol base. 
+
+If you only want to see the AI Model deployed then that is also possible, just start at Step 5 and start reading from the line above (Step 5) to find the (2023_05_06_15_00_Air-Ethanol_HP-354_RDC-5-10.config) file that you will need to run sniff.py. 
 # Dependencies
 
 For data collection I purchased the Bosch Sensortec 8 sensor devkit board from Mouser (mouser.co.uk, part no 262-EVALBD-BME688, price ex-vat £30.69), which is the bare board and requires the separate purchase of an Adafruit Huzzah ESP 32. The 8 sensor devkit board needs a coin battery CR1220 and a microSD card (up to 32GB is supported, the socket is spring-loaded so push in to release).
