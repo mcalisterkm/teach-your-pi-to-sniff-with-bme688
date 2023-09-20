@@ -6,7 +6,7 @@ There are dependencies:
 2) To analyse the data and generate the AI Model I use BME AI Studio
 3) To deploy the AI Model and "Sniff" I use a Raspberry PI and a BME688 Module (PI3g, Adafruit, Pimoroni, and others have I2C based boards with a single BME688 sensor).
 
-If you only have the PI and a BME688 module then you can skip the data collection part (no 8 sensor devkit) and start at Step 3 with the import of the project data into AI Studio. My data is air and ethenol so you will need a little ethenol - I used hand sanitiser which is ~70% ethenol, but it might work with a spray of perfume as that also has an ethenol base. 
+If you only have the PI and a BME688 module then you can skip the data collection part (no 8 sensor devkit) and start at Step 3 with the import of the project data into AI Studio. My data is air and ethenol so you will need a little ethenol - I used hand sanitiser which is ~70% ethenol, but ethenol is widely used (cleaning products, perfume, etc) - you only need a little on a paper towel. 
 
 If you only want to see the AI Model deployed then that is also possible, just start at Step 5 and start reading from the line above (Step 5) to find the (2023_05_06_15_00_Air-Ethanol_HP-354_RDC-5-10.config) file that you will need to run sniff.py. 
 # Dependencies
