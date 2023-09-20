@@ -29,7 +29,7 @@ A USB cable with Micro-USB at the devkit bord, is required to connect to your wo
 
 The BOSCH Sensortec AI-Studio runs on Windows and MAC, and the models it produces run on BSEC supported processors including the Raspberry PI (32 bit). The BME688 single sensor breakout modules communicate using I2C, and are produced by several makers including PI3G, Adafruit, Pimoroni, SparkFun. I use my BME688 breakout modules with Raspberry PI Zero 2 boards, as shown [here.](https://github.com/mcalisterkm/p-sensors/tree/master/src/1.3.0)
 
-NOTE: It is important not to touch the BME688 sensor as it may contaminate the sensor and introduce measurement errors. The two push buttons in the middle are used to mark changes in data, and it is easy to miss.
+NOTE: It is important not to touch the BME688 sensor as it may contaminate the sensor and introduce measurement errors. The two push buttons in the middle are used to mark changes in data, and it can be tricky to hold the device and press a button.
   
 The BOSCH-Sensortec software have release notes describing what versions are compatible, and the software set used here is:
 
