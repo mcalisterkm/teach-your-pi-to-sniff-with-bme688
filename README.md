@@ -1,6 +1,6 @@
 # Teach your Raspberry Pi to Sniff with a BME688 module
 
-** NOTE: This article was written in 2023, the versions of software listed here have changed but the steps and work flow have not. See "AI-Studio-Devkit-2024" for an update and software changes. **
+**NOTE: This article was written in 2023, the versions of software listed here have changed but the steps and work flow have not. See "AI-Studio-Devkit-2024" for an update and software changes**.
 
 In this article we cover the recording of data, training the AI Model, and deploying the model to a Raspberry Pi Zero 2.
 There are three 
