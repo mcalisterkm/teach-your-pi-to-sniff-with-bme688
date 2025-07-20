@@ -19,7 +19,7 @@ As there are so many VOCs, monitoring all of them continuously is too hard/expen
 ISO 16000-29:2014 Indoor air
 Part 29: Test methods for VOC detectors
 
-Bosch Sensortec produces a range of Ari Quality/Gas Sensors: BME680, BME688 and BME690 range of [gas sensors][4].
+Bosch Sensortec produces a range of Air Quality [gas sensors][4]: BME680, BME688 and BME690.
 
 Bosch Sensortec follow the ISO 16000-29 process, and provided details of their target gasses and the VOC profile used (breath-VOC) in the "Data Sheet" for the sensor. The [BME690][3] is the latest generation at the time of writing, and the testing quoted is for H2S (Hydrogen sulfide), EtOH (ethanol) CO (carbon monoxide) and b-VOCs (breath-VOCs).
 
