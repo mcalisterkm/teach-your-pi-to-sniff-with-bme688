@@ -73,21 +73,13 @@ MOX sensors are low cost compared to all the above gas analysis methods, but as 
 The Bosch Sensortec BME688 and BME690 work with AI Studio to build models which can be used to "sniff" up to 4 separate classes. Data is collected using an 8 sensor devkit, which is loaded into the AI Studio. A starting point is to collect 30 minutes of data for each element you are trying to model (for example, banana, apple, pear, normal air), to try to have a balanced number of data points (similar size of data for each class). The AI Studio produces models using either an ADAM (a gradient descent optimiser) model or regression method. If all goes well, AI Studio will produce a model with estimates of the error rates expected (model quality).  Deploying the model in 'selectivity' (scanning) mode on the BME688 or BME690 sensor returns a percentage result for each of the (max) 4 classes. So Class 1 banana might be 70%, Class 2 apple 15%, Class 3 Pear 5%, and Class 4 Normal Air 30%). 
 
 
-References
-
+References:
 [1]: https://www.electronicshub.org/mems-sensors/
-
 [2]: https://www.epa.gov/indoor-air-quality-iaq/technical-overview-volatile-organic-compounds
-
 [3]: https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme690-ds001-00.pdf
-
 [4]: https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/
-
 [5]: https://www.mdpi.com/1424-8220/25/5/1423
-
 [6]: https://www.sciencedirect.com/science/article/abs/pii/S1352231019304194
-
 [7]: https://laqm.defra.gov.uk/wp-content/uploads/2022/08/LAQM-TG22-August-22-v1.0.pdf
-
 [8]: https://www.rsc.org/images/environmental-brief-no-8-2015_tcm18-244603.pdf
 [9]: https://www.airproducts.co.uk/gases/calibration-mixtures
