@@ -1,14 +1,9 @@
 # Teach your Raspberry Pi to Sniff with a BME688 module
 
+NOTE: This article was written in 2023, the versions of software listed here have changed but the steps and work flow have not. See "AI-Studio-Devkit-2024" for an update and software changes.
+
 In this article we cover the recording of data, training the AI Model, and deploying the model to a Raspberry Pi Zero 2.
-There are dependencies:
-1) For data collection I use the Bosch Sensortec 8 sensor devkit and some ethenol/hand sanitiser
-2) To analyse the data and generate the AI Model I use BME AI Studio
-3) To deploy the AI Model and "Sniff" I use a Raspberry PI and a BME688 Module (PI3g, Adafruit, Pimoroni, and others have I2C based boards with a single BME688 sensor).
-
-If you only have the PI and a BME688 module then you can skip the data collection part (no 8 sensor devkit) and start at Step 3 with the import of the project data into AI Studio. My data is air and ethenol so you will need a little ethenol - I used hand sanitiser which is ~70% ethenol, but ethenol is widely used (cleaning products, perfume, etc) - you only need a little on a paper towel. 
-
-If you only want to see the AI Model deployed then that is also possible, just start at Step 5 and start reading from the line above (Step 5) to find the (2023_05_06_15_00_Air-Ethanol_HP-354_RDC-5-10.config) file that you will need to run sniff.py. 
+There are three 
 # Dependencies
 
 For data collection I purchased the Bosch Sensortec 8 sensor devkit board from Mouser (mouser.co.uk, part no 262-EVALBD-BME688, price ex-vat £30.69), which is the bare board and requires the separate purchase of an Adafruit Huzzah ESP 32. The 8 sensor devkit board needs a coin battery CR1220 and a microSD card (up to 32GB is supported, the socket is spring-loaded so push in to release).
@@ -23,15 +18,15 @@ The HUZZA32 is an ESP32 Arduino board with WiFi and Bluetooth (WROOM).
 
 ![huzza32-1.png](img%2Fhuzza32-1.png)
 
-A USB cable with Micro-USB at the devkit bord, is required to connect to your workstation (which will most likely be USB Type A or Type C).
+A USB cable with Micro-USB at the devkit board, is required to connect to your workstation (which will most likely be USB Type A or Type C).
 
 ![huzza32-soc1.png](img%2Fhuzza32-soc1.png)
 
 The BOSCH Sensortec AI-Studio runs on Windows and MAC, and the models it produces run on BSEC supported processors including the Raspberry PI (32 bit). The BME688 single sensor breakout modules communicate using I2C, and are produced by several makers including PI3G, Adafruit, Pimoroni, SparkFun. I use my BME688 breakout modules with Raspberry PI Zero 2 boards, as shown [here.](https://github.com/mcalisterkm/p-sensors/tree/master/src/1.3.0)
 
-NOTE: It is important not to touch the BME688 sensor as it may contaminate the sensor and introduce measurement errors. The two push buttons in the middle are used to mark changes in data, and it can be tricky to hold the device and press a button.
+NOTE: It is important not to touch the BME688 sensor as it may contaminate the sensor and introduce measurement errors. The two push buttons in the middle are used to mark changes in data, and it is easy to miss.
   
-The BOSCH-Sensortec software have release notes describing what versions are compatible, and the software set used here is:
+The BOSCH-Sensortec software all has release notes describing what versions are compatible, and the software set used here is:
 
 | Name                                   | File & Ver                                |
 |:----------------------------------------|:------------------------------------------|
@@ -40,7 +35,7 @@ The BOSCH-Sensortec software have release notes describing what versions are com
 | BOSCH Sensortec BSEC Software          | BSEC version 2.4.0.0                      |
 
 The BOSCH Sensortec software is not open source, please see the licence terms.
-All of the above software can be found [here](https://www.bosch-sensortec.com/software-tools/software/bme688-software/)
+All of the above software can be found [here](https://www.bosch-sensortec.com/software-tools/software/)
 
 The PI3G Python wrapper supporting BSEC 2.4.0.0, on Raspberry PI can be found [here](https://github.com/mcalisterkm/bme68x-python-library-bsec2.4.0.0)
 
@@ -69,14 +64,13 @@ The BOSCH Sensortec versions are all different so BSEC and AI-Studio version num
 
 6. Copy to microSD card
 
-Mount the microSD card you are using with the BME Devkit on your computer (mine has an SD-CARD slot) and use a file manager to copy the board file into the root of the SD-CARD (FAT format and no bigger than 32GB).  The file name will be similar to this: 2023_05_03_12_54_BoardConfiguration.bmeconfig. You may need an adapter for the microSD.
+Mount the microSD card you are using with the BME Devkit on your computer (mine has an SD-CARD slot) and use a file manager to copy the board file into the root of the SD-CARD (FAT format and no bigger than 32GB).  The file name will be similar to this: 2023_05_03_12_54_BoardConfiguration.bmeconfig. An adapter for the microSD may be required.
 
 7. Eject the SD-CARD and put it back in the BME688-Devkit
 
 ![sd-card1.png](img/sd-card1.png "SD-CARD")
 
 # STEP 2 - BME688-Devkit setup
-
 8. Communicating with the BME6888-Devkit
 
 The devkit connects to your computer via a USB cable, and it requires serial communications to be enabled and that requires a driver to be loaded. Windows 10 recognises the devkit on plugging the USB cable in, but by default does not have the driver, so looking in device manager you will see similar to this.
@@ -107,7 +101,7 @@ The Huzza32 has two LEDs either side of the microUSB connection, one red and one
 
 ![reading-data1.png](img%2Freading-data1.png)
 
-Now the development kit sensors need to be left powered on for 24 hours to burn in. Introducing the sensor to "bad" air in this burn in is a good idea and below you can see I have some hand sanitiser 65% Ethenol and a tissue. Wet the tissue (moist not runing wet) with a few drops of sanitiser and use a container to cover the sensors with the tissue pushed in the end not in contact with the sensors.
+Now the development kit sensors need to be left powered on for 24 hours to burn in. Introducing the sensor to "bad" air in this burn in is a good idea and below you can see I have some hand sanitiser 65% Ethenol and a tissue. Wet the tissue (moist not runing wet) with a few drops of sanitiser and use a container to cover the sensors with the tissue pushed in the end - not in contact with the sensors.
 
 ![ethanol2.png](img/ethanol2.png)
 
@@ -118,8 +112,7 @@ After the burn in period, unplug the development kit from USB and remove the mic
 
 # STEP 3 - Recording Data & Import into AI-Studio
 
-Once the development kit is powered on it will start recording (assuming you flashed it in Step 2), and display the regular 1 sec red LED flash. 
-The power to the micro USB could come from a power bank (phone charger battery), a computer, or a Lithium cell. It is easiest to leave the usb cable plugged into your computer, but all it is doing is providing power to the development kit
+Once the development kit is powered on it will start recording (assuming you flashed it in Step 2), and display the regular 1 sec red LED flash. The power to the micro USB could come from a power bank (phone charger battery), a computer, or a Lithium cell. It is easiest to leave the usb cable plugged into your computer, but all it is doing is providing power to the development kit
 
 The buttons on the development kit provide a label marker in the data file, so you can note when you start and end a recording with a smell. Pressing buttons adds to label info files and the data collected includes identifiers, but it has no idea what smell changes are being made, so you still need to make notes of times, actions, and the buttons pressed. 
 
@@ -165,7 +158,7 @@ Assuming that PI3G/BME-68xPython-library with support for BSEC 2.4.0.0 is instal
 $ python3 sniff.py
 ```
 
-And here is a pimoroni BME688 sniffing the air.
+And here is a pimoroni BME688 module sniffing the air.
 
 ![room-air-gas1.png](img%2Froom-air-gas1.png)
 
@@ -177,7 +170,7 @@ Now we add the tissue with some hand sanitiser (ethanol 68%)
 
 ![ethanol-gas1.png](img%2Fethanol-gas1.png)
 
-And BSEC agrees it is Ethanol but not always 100%.
+And BSEC agrees it is Ethanol to a high degree of certainty.
 
 ![ethanol1.png](img%2Fethanol1.png)
 
