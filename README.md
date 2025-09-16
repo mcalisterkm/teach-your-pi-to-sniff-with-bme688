@@ -2,7 +2,7 @@
 
 **NOTE: This article was written in 2023, the versions of software listed below have changed but the steps and work flow have not. See "AI-Studio-Devkit-2024" for an update and software changes in the BME 688 system**.
 
-**Note: In 2025 the BME690 Devkit was released See AI-Studio-BME690-Devkit.md for details on setup and use**
+**Note: In 2025 the BME690 Devkit was released See AI-Studio-BME690-Devkit.md for details on setup and use.**
 
 In this article we cover the recording of data, training the AI Model, and deploying the model to a Raspberry Pi Zero 2.
 There are three 
@@ -182,6 +182,7 @@ But if we slide the damp tissue further away from the sensor, BSEC starts to get
 
 And I think that's because I only collected data on a strong smelling source placed close to the development kit sensors, and now I am diluting the smell by moving the tissue further away and the model fails. 
 MOX sensors like the BME688 sample the atmosphere they are given and not any specific component of that atmosphere. So for example training on a specific pure gas is unlikely to find traces of that gas in an open atmosphere. I would need to train in a realistic environment that I expect the sensor to recognise, and if that is multiple scenarios then I need data from each one to train the algorithm.  AI-Studio also suggests varying the heater profiles if results are not good enough, and tuning the duty cycle after the algorithm is chosen to adjust the power consumption.  
+
 
 
 
