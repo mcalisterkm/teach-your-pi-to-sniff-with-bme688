@@ -1,0 +1,47 @@
+{
+  "labelInfoHeader": {
+    "counterPowerOnOff": 1,
+    "seedPowerOnOff": "8dkcmzucbcot60nt",
+    "dateCreated": "1741865094",
+    "dateCreated_ISO": "2025-03-13T11:24:54+00:00",
+    "firmwareVersion": "2.1.5",
+    "boardId": "84CCA811C9B0"
+  },
+  "labelInformation": [
+    {
+      "labelTag": 0,
+      "labelName": "Initial",
+      "labelDescription": "Standard label for no label has been set"
+    },
+    {
+      "labelTag": 1,
+      "labelName": "Button 1",
+      "labelDescription": "Standard label for hardware button 1 pressed"
+    },
+    {
+      "labelTag": 2,
+      "labelName": "Button 2",
+      "labelDescription": "Standard label for hardware button 2 pressed"
+    },
+    {
+      "labelTag": 3,
+      "labelName": "Button 1+2",
+      "labelDescription": "Standard label for hardware button 1 and button 2 pressed"
+    },
+    {
+      "labelTag": 1001,
+      "labelName": "Specimen 1001",
+      "labelDescription": " "
+    },
+    {
+      "labelTag": 1001,
+      "labelName": "Specimen 1001",
+      "labelDescription": "Air"
+    },
+    {
+      "labelTag": 1002,
+      "labelName": "Specimen 1002",
+      "labelDescription": " "
+    }
+  ]
+}

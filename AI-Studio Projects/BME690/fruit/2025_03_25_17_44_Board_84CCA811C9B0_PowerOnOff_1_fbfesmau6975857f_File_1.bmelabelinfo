@@ -1,0 +1,47 @@
+{
+  "labelInfoHeader": {
+    "counterPowerOnOff": 1,
+    "seedPowerOnOff": "fbfesmau6975857f",
+    "dateCreated": "1742924688",
+    "dateCreated_ISO": "2025-03-25T17:44:48+00:00",
+    "firmwareVersion": "2.1.5",
+    "boardId": "84CCA811C9B0"
+  },
+  "labelInformation": [
+    {
+      "labelTag": 0,
+      "labelName": "Initial",
+      "labelDescription": "Standard label for no label has been set"
+    },
+    {
+      "labelTag": 1,
+      "labelName": "Button 1",
+      "labelDescription": "Standard label for hardware button 1 pressed"
+    },
+    {
+      "labelTag": 2,
+      "labelName": "Button 2",
+      "labelDescription": "Standard label for hardware button 2 pressed"
+    },
+    {
+      "labelTag": 3,
+      "labelName": "Button 1+2",
+      "labelDescription": "Standard label for hardware button 1 and button 2 pressed"
+    },
+    {
+      "labelTag": 1002,
+      "labelName": "Specimen 1002",
+      "labelDescription": " "
+    },
+    {
+      "labelTag": 1002,
+      "labelName": "lemonn 1002",
+      "labelDescription": " "
+    },
+    {
+      "labelTag": 1003,
+      "labelName": "Specimen 1003",
+      "labelDescription": " "
+    }
+  ]
+}

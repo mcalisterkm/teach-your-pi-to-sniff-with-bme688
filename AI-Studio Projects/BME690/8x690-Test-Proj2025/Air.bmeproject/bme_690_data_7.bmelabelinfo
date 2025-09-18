@@ -1,0 +1,10 @@
+{"labelInfoHeader": {"counterPowerOnOff": 1,"seedPowerOnOff":                            "n8xx2ad1o2quaej6","firmwareVersion": "3.1.0","boardId": "844001418"                            },"labelInformation": [{ "labelTag": 0, "labelName": "Initial", "labelDescription": "Standard label for no label has been set" },
+                        { "labelTag": 1, "labelName": "Button 1", "labelDescription": "Standard label for hardware button 1 pressed" },
+                        { "labelTag": 2, "labelName": "Button 2", "labelDescription": "Standard label for hardware button 2 pressed" },
+                        { "labelTag": 3, "labelName": "Button 1+2", "labelDescription": "Standard label for hardware button 1 and button 2 pressed" }
+,{ "labelTag":1001, "labelName":"Specimen 1001", "labelDescription": " " }
+,{ "labelTag":1001, "labelName":"banana1001", "labelDescription": "ripe vanana " }
+,{ "labelTag":1002, "labelName":"Specimen 1002", "labelDescription": " " }
+,{ "labelTag":1002, "labelName":"banana1002", "labelDescription": " " }
+,{ "labelTag":1003, "labelName":"Specimen 1003", "labelDescription": " " }
+]}
