@@ -1,0 +1,32 @@
+{
+	"labelInfoHeader": {
+		"counterPowerOnOff": 1,
+		"seedPowerOnOff": "7qmkm04abame1u4h",
+		"dateCreated": "1681537698",
+		"dateCreated_ISO": "2023-04-15T05:48:18+00:00",
+		"firmwareVersion": "2.0.9",
+		"boardId": "84CCA811C9B0"
+	},
+	"labelInformation": [
+		{
+			"labelTag": 0,
+			"labelName": "Initial",
+			"labelDescription": "Standard label for no label has been set"
+		},
+		{
+			"labelTag": 1,
+			"labelName": "Button 1",
+			"labelDescription": "Standard label for hardware button 1 pressed"
+		},
+		{
+			"labelTag": 2,
+			"labelName": "Button 2",
+			"labelDescription": "Standard label for hardware button 2 pressed"
+		},
+		{
+			"labelTag": 3,
+			"labelName": "Button 1+2",
+			"labelDescription": "Standard label for hardware button 1 and button 2 pressed"
+		}
+	]
+}

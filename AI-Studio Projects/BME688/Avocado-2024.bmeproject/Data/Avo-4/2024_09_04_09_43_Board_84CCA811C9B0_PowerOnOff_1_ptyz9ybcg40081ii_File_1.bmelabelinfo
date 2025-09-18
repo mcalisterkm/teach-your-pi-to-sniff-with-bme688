@@ -1,0 +1,47 @@
+{
+  "labelInfoHeader": {
+    "counterPowerOnOff": 1,
+    "seedPowerOnOff": "ptyz9ybcg40081ii",
+    "dateCreated": "1725443005",
+    "dateCreated_ISO": "2024-09-04T09:43:25+00:00",
+    "firmwareVersion": "2.1.5",
+    "boardId": "84CCA811C9B0"
+  },
+  "labelInformation": [
+    {
+      "labelTag": 0,
+      "labelName": "Initial",
+      "labelDescription": "Standard label for no label has been set"
+    },
+    {
+      "labelTag": 1,
+      "labelName": "Button 1",
+      "labelDescription": "Standard label for hardware button 1 pressed"
+    },
+    {
+      "labelTag": 2,
+      "labelName": "Button 2",
+      "labelDescription": "Standard label for hardware button 2 pressed"
+    },
+    {
+      "labelTag": 3,
+      "labelName": "Button 1+2",
+      "labelDescription": "Standard label for hardware button 1 and button 2 pressed"
+    },
+    {
+      "labelTag": 1001,
+      "labelName": "Specimen 1001",
+      "labelDescription": " "
+    },
+    {
+      "labelTag": 1001,
+      "labelName": "Specimen avo41",
+      "labelDescription": "avo 4"
+    },
+    {
+      "labelTag": 1002,
+      "labelName": "Specimen 1002",
+      "labelDescription": " "
+    }
+  ]
+}

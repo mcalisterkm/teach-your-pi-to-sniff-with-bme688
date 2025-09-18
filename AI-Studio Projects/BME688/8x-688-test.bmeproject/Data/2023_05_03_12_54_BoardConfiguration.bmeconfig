@@ -1,0 +1,108 @@
+{
+  "configHeader": {
+    "dateCreated": "2023-05-03T12:54:37.313Z",
+    "appVersion": "2.0.0",
+    "boardType": "board_8",
+    "boardMode": "burn_in",
+    "boardLayout": "grouped"
+  },
+  "configBody": {
+    "heaterProfiles": [
+      {
+        "id": "heater_354",
+        "timeBase": 140,
+        "temperatureTimeVectors": [
+          [
+            320,
+            5
+          ],
+          [
+            100,
+            2
+          ],
+          [
+            100,
+            10
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            200,
+            5
+          ],
+          [
+            200,
+            5
+          ],
+          [
+            200,
+            5
+          ],
+          [
+            320,
+            5
+          ],
+          [
+            320,
+            5
+          ],
+          [
+            320,
+            5
+          ]
+        ]
+      }
+    ],
+    "dutyCycleProfiles": [
+      {
+        "id": "duty_5_10",
+        "numberScanningCycles": 5,
+        "numberSleepingCycles": 10
+      }
+    ],
+    "sensorConfigurations": [
+      {
+        "sensorIndex": 0,
+        "heaterProfile": "heater_354",
+        "dutyCycleProfile": "duty_5_10"
+      },
+      {
+        "sensorIndex": 1,
+        "heaterProfile": "heater_354",
+        "dutyCycleProfile": "duty_5_10"
+      },
+      {
+        "sensorIndex": 2,
+        "heaterProfile": "heater_354",
+        "dutyCycleProfile": "duty_5_10"
+      },
+      {
+        "sensorIndex": 3,
+        "heaterProfile": "heater_354",
+        "dutyCycleProfile": "duty_5_10"
+      },
+      {
+        "sensorIndex": 4,
+        "heaterProfile": "heater_354",
+        "dutyCycleProfile": "duty_5_10"
+      },
+      {
+        "sensorIndex": 5,
+        "heaterProfile": "heater_354",
+        "dutyCycleProfile": "duty_5_10"
+      },
+      {
+        "sensorIndex": 6,
+        "heaterProfile": "heater_354",
+        "dutyCycleProfile": "duty_5_10"
+      },
+      {
+        "sensorIndex": 7,
+        "heaterProfile": "heater_354",
+        "dutyCycleProfile": "duty_5_10"
+      }
+    ]
+  }
+}
