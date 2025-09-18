@@ -1,13 +1,14 @@
 # Teach your Raspberry Pi to Sniff with a BME688 module
 
-***NOTE: This article was written in 2023, the versions of software listed below have changed but the steps and work flow have not. 
+*** NOTE: This article was written in 2023, the versions of software listed below have changed but the steps and work flow have not. 
 
-*** There is an update in "AI-Studio-Devkit-2024.md" looking at changes and new versions in the BME 688 system**.
+*** There is an update in "AI-Studio-Devkit-2024.md" looking at changes and new versions in the BME 688 system.
 
-*** And a further update in September 2025 "AI-Studio-BME690-Devkit.md" looking at the new BME690 Devkit it's setup and use.**
+*** And a further update in September 2025 "AI-Studio-BME690-Devkit.md" looking at the new BME690 Devkit it's setup and use.
+*** AI-Studio projects includes AI-Studio Windows data + models (for BME688 and BME690) that you can load and experiment on. 
 
 In this article we cover the recording of data, training the AI Model, and deploying the model to a Raspberry Pi Zero 2.
-There are three 
+
 # Dependencies
 
 For data collection I purchased the Bosch Sensortec 8 sensor devkit board from Mouser (mouser.co.uk, part no 262-EVALBD-BME688, price ex-vat £30.69), which is the bare board and requires the separate purchase of an Adafruit Huzzah ESP 32. The 8 sensor devkit board needs a coin battery CR1220 and a microSD card (up to 32GB is supported, the socket is spring-loaded so push in to release).
@@ -184,6 +185,7 @@ But if we slide the damp tissue further away from the sensor, BSEC starts to get
 
 And I think that's because I only collected data on a strong smelling source placed close to the development kit sensors, and now I am diluting the smell by moving the tissue further away and the model fails. 
 MOX sensors like the BME688 sample the atmosphere they are given and not any specific component of that atmosphere. So for example training on a specific pure gas is unlikely to find traces of that gas in an open atmosphere. I would need to train in a realistic environment that I expect the sensor to recognise, and if that is multiple scenarios then I need data from each one to train the algorithm.  AI-Studio also suggests varying the heater profiles if results are not good enough, and tuning the duty cycle after the algorithm is chosen to adjust the power consumption.  
+
 
 
 
