@@ -4,7 +4,7 @@
 
 *** There is an refresh for 2024 in "AI-Studio-Devkit-2024.md" looking at changes and new versions in the BME 688 system.
 
-*** And a new repository has been created to support the new BME690 Devkit [here](https://github.com/mcalisterkm/teach-your-pi-to-sniff-with-BME690)
+*** And a new repository has been created to support the  BME690 Devkit [here](https://github.com/mcalisterkm/teach-your-pi-to-sniff-with-BME690)
 
 *** AI-Studio projects folder provides AI-Studio Windows data + models for BME688 that you can load and experiment on. 
 
